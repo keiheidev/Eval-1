@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,10 +30,31 @@
       </nav>
     </div>
   </header>
-  <main>
-      <h2>Posez-nous vos questions</h2>
-      <section>
 
-      </section>
+  <section class="content">
+    <form action="POST">
+      <legend>Posez-nous vos <br> questions!</legend>
+      <label for="name">Nom</label>
+      <input type="text" id="name" placeholder="Dupond" name="name" required>
 
-  </main>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="dupond@mail.com" name="email" required>
+
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" placeholder="0600000000" name="phone" required>
+
+      <label for="message">Message</label>
+      <textarea rows="10" id="message" name="message"></textarea>
+
+      <button><a href="#" class="button">Envoyer</a></button>
+    </form>
+  </section>
+  <footer>
+    <div class="footer">
+      <p class="p_footer">Tous droit réservé <br>
+        Ce site est non officiel et n'engage que ma personne dans le cadre de ma formation.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
