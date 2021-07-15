@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(image/contact.webp) center no-repeat;
+  background-size: cover;
+  height: 81rem;
+}
+/*NAVBAR*/
+h1 {
+  font-family: "Parisienne", cursive;
+  font-weight: 800;
+  font-size: 3.6rem;
+  margin: 0;
+}
+.wrapper,
+.list_wrapper,
+nav{
+  display: flex;
+}
+.wrapper {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: darkorange;
+  padding: 0 1.25rem;
+  opacity: 0.71;
+}
+.list_wrapper {
+  gap: 20px;
+}
+.list_wrapper,
+.list_title {
+  list-style: none;
+}
+nav {
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+h1, a {
+  text-shadow: rgb(54, 52, 52) 2px 0 10px;
+  color: white;
+}
