@@ -64,29 +64,27 @@ h2, .subtitle {
   height: 67.5rem;
 }
 .card_1{
-  box-sizing: border-box;
   text-align: center;
-  background-color: rgba(234,247,247,0.45);
   border-radius: 21%;
   border: 2px solid black;
-  width: calc(50% - 540px);
-  font-size: 21px;
   margin-left: 3rem;
   margin-top: 32rem;
   float: left;
   padding: 4px 13px;
 }
 .card_2{
-  box-sizing: border-box;
   text-align: left;
-  background-color: rgba(234,247,247,0.45);
   border-radius: 18%;
   border: 2px solid black;
-  width: calc(50% - 540px);
-  font-size: 21px;
   float: right;
   margin: 9.3rem;
   padding: 4px 13px;
+}
+.card_1, .card_2{
+   box-sizing: border-box;
+   background-color: rgba(234,247,247,0.45);
+   width: calc(50% - 540px); 
+   font-size: 21px;
 }
 .list_title{
   text-align: center;
