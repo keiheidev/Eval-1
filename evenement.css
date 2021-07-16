@@ -4,7 +4,7 @@ body {
   background: url(image/hina.jpg) center no-repeat;
   background-size: cover;
   height: 86.1rem;
-} 
+}
 
 h1 {
   font-family: "Parisienne", cursive;
@@ -14,7 +14,7 @@ h1 {
 }
 .wrapper,
 .list_wrapper,
-nav{
+nav {
   display: flex;
 }
 
@@ -43,14 +43,20 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
 }
+a:link,
+a:hover {
+  color: #333;
+}
 
-h1, a {
+h1,
+a {
   text-shadow: rgb(54, 52, 52) 2px 0 10px;
   color: white;
 }
 
 /*MAIN*/
-.card_head, .card_body{
+.card_head,
+.card_body {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,68 +64,99 @@ h1, a {
   margin: 2.563rem;
   padding: 8px;
   flex-wrap: wrap;
-  }
+}
 /* CARDS */
-.card{
+.card {
   width: 20%;
   height: 35rem;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 18px;
-  background-color: rgba(0,0,0,0.6);
-  box-shadow: 5px 5px 15px rgba(255,255,255,0.9);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.9);
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s ease;
   cursor: pointer;
 }
-.card_title{
+.card_title {
   color: rgb(255, 255, 255);
   text-shadow: rgb(255, 255, 255) 2px 0 10px;
 }
-.card_text h3{
+.card_text h3 {
   margin-top: 0px;
   font-size: 28px;
   margin: 25px;
 }
-.card_a{
+.card_a {
   color: black;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.2);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
-#card_middle{
+#card_middle {
   margin-top: inherit;
   height: 31rem;
 }
-img{
+img {
   width: 100%;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px ;
+  border-top-right-radius: 15px;
 }
-.img_1{
+.img_1 {
   height: 14.5rem;
 }
-.img_2, .img_5{
+.img_2,
+.img_5 {
   height: 15rem;
 }
-.img_3, .img_4{
+.img_3,
+.img_4 {
   height: 14rem;
 }
-.img_4{
+.img_4 {
   opacity: 0.5;
 }
-.footer{
-  background-color: #dfdddd ;
+.footer {
+  background-color: #dfdddd;
   height: 100px;
   margin: -15px;
 }
-.p_footer{
+.p_footer {
   text-align: center;
   padding: 1.3rem;
 }
 
+@media screen and (min-width: 375px) and (max-width: 979px) {
+  body{
+    background: none;
+  }
+  h1 {
+    display: flex;
+    align-self: center;
+  }
+  nav {
+    padding-right: 32px;
+  }
+  .list_wrapper {
+    flex-flow: column wrap;
+  }
+  .card{
+    width: 100%;
+    border-radius: 0;
+    transition: none !important;
+  }
+  .card_head, .card_body{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+  .card:hover{
+    transform: none;
+  }
+  img{
+    border-radius: 0;
+  }
 
-
-
-
+}
