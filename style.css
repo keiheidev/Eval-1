@@ -82,7 +82,7 @@ h2, .subtitle {
 .card_1, .card_2{
    box-sizing: border-box;
    background-color: rgba(234,247,247,0.45);
-   width: calc(50% - 540px); 
+   width: 25.6rem; 
    font-size: 21px;
 }
 .list_title{
