@@ -25,7 +25,6 @@ h2{
   background-color: darkorange;
   padding: 0 1.25rem;
   opacity: 0.71;
-  width: 100%;
 }
 .list_wrapper{  
   gap: 20px;
@@ -95,7 +94,6 @@ h2, .subtitle {
   background-color: #dfdddd ;
   height: 100px;
   margin: -15px;
-  width: 100%;
 }
 .p_foot{
   text-align: center;
